@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screenNineRowModel" type="com.safiuddinsapplication.app.modules.screennine.data.model.ScreenNineRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/framePassword"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylecornerRadius_3">
+        <LinearLayout android:id="@+id/linearRowmdipasswordou"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageMdipasswordou"
+                android:layout_height="@dimen/_19pxh"
+                android:layout_width="@dimen/_16pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_mdipasswordou"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_mdipasswordou"/>
+            <ImageView android:id="@+id/imagePheye"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_266pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="@dimen/_15pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_pheye}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_pheye"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnCurrentPasswordOne"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_9pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/msg_current_passwor"
+            android:textAllCaps="false"
+            style="@style/btnRoundedOutline_2" tools:text="@string/msg_current_passwor"/>
+    </FrameLayout>
+</layout>

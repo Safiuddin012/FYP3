@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screenTenVM" type="com.safiuddinsapplication.app.modules.screenten.data.viewmodel.ScreenTenVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumngroupone"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_24pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearScreenTen"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblack_900">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackgroupone"
+                android:layout_height="@dimen/_175pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageGroupOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_175pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_group1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group1"/>
+                <LinearLayout android:id="@+id/linearRowplayback"
+                    android:layout_gravity="top|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_42pxv"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_42pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayback"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_33pxv"
+                        android:layout_weight="0.77"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{screenTenVM.screenTenModel.txtPlayback}"
+                        style="@style/txtABeeZeeitalic32" tools:text="@string/lbl_playback"/>
+                    <ImageView android:id="@+id/imageEllipseEightyOne"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_67pxh"
+                        android:layout_width="@dimen/_40pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse78}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse78"/>
+                </LinearLayout>
+            </FrameLayout>
+            <ImageView android:id="@+id/imageRectangle"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_240pxh"
+                android:layout_marginEnd="@dimen/_65pxh"
+                android:layout_marginStart="@dimen/_65pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="@dimen/_240pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_rectangle_240x240}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_240x240"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnReviewShoots"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_172pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_23pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_23pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_review_shoots"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_review_shoots"/>
+            <FrameLayout android:id="@+id/frameStack"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_56pxv"
+                android:layout_marginEnd="@dimen/_41pxh"
+                android:layout_marginStart="@dimen/_41pxh"
+                android:layout_marginTop="@dimen/_77pxv"
+                android:layout_width="@dimen/_56pxh" style="@style/groupStylelime_1">
+                <FrameLayout android:id="@+id/frameHome"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_28pxv"
+                    android:layout_marginBottom="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_33pxh">
+                    <ImageView android:id="@+id/imagePowerButtonOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_28pxh"
+                        android:layout_width="@dimen/_33pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_powerbutton1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_powerbutton1"/>
+                    <ImageView android:id="@+id/imagePowerButtonOneOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_28pxh"
+                        android:layout_width="@dimen/_33pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_powerbutton1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_powerbutton1"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/imagePowerButtonOneTwo"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="@dimen/_33pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_powerbutton1_28x33"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_powerbutton1_28x33"/>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:gravity="center_horizontal"
+            android:id="@+id/frameBottomappbarclock"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15pxh" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearRow"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_59pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowclock"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.59"
+                    android:layout_width="0dp" android:orientation="horizontal">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingBtnFloatingactionbutton"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85" android:layout_width="0dp"/>
+                    <ImageView android:id="@+id/imageClock"
+                        android:layout_height="@dimen/_19pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_28pxv"
+                        android:layout_width="@dimen/_19pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_clock"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_clock"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowvector"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_59pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_weight="0.41"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageVector"
+                        android:layout_height="@dimen/_19pxh"
+                        android:layout_width="@dimen/_19pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                    <ImageView android:id="@+id/imageLock"
+                        android:layout_height="@dimen/_18pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_59pxh"
+                        android:layout_width="@dimen/_19pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_lock"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_lock"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
