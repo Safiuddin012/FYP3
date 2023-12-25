@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screenFourVM" type="com.safiuddinsapplication.app.modules.screenfour.data.viewmodel.ScreenFourVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearScreenFour"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylelime_900">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackgroupone"
+            android:layout_height="@dimen/_175pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageGroupOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_175pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_group1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group1"/>
+            <LinearLayout android:id="@+id/linearColumnwelcomeback"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_39pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_39pxv"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtWelcomeBack"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{screenFourVM.screenFourModel.txtWelcomeBack}"
+                    style="@style/txtABeeZeeitalic32" tools:text="@string/lbl_welcome_back"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEnterYourUser"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{screenFourVM.screenFourModel.txtEnterYourUser}"
+                    style="@style/txtABeeZeeitalic18" tools:text="@string/msg_enter_your_user"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameEmailorUsern"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_46pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_151pxv"
+            android:layout_width="@dimen/_333pxh" style="@style/groupStylecornerRadius_1">
+            <ImageView android:id="@+id/imagePhuserlight"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_21pxh"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="@dimen/_20pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_phuserlight"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_phuserlight"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnEmailOrUserNameOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/msg_email_or_user_n"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline" tools:text="@string/msg_email_or_user_n"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/framePassword"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_46pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_width="@dimen/_333pxh" style="@style/groupStylecornerRadius_2">
+            <LinearLayout android:id="@+id/linearRowmdipasswordou"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageMdipasswordou"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_17pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_mdipasswordou"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_mdipasswordou"/>
+                <ImageView android:id="@+id/imagePheye"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_279pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_16pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_pheye}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_pheye"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnPassword"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_password"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline_1" tools:text="@string/lbl_password"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtForgottenPassw"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_103pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{screenFourVM.screenFourModel.txtForgottenPassw}"
+            style="@style/txtABeeZeeitalic15" tools:text="@string/msg_forgotten_passw"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOrCreateaNew"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{screenFourVM.screenFourModel.txtOrCreateaNew}"
+            style="@style/txtABeeZeeitalic15" tools:text="@string/msg_or_create_a_new"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_112pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_24pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_24pxv" android:singleLine="true"
+            android:text="@string/lbl_login" android:textAllCaps="false"
+            style="@style/btnSolidRounded_1" tools:text="@string/lbl_login"/>
+    </LinearLayout>
+</layout>

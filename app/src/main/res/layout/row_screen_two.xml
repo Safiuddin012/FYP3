@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screenTwoRowModel" type="com.safiuddinsapplication.app.modules.screentwo.data.model.ScreenTwoRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnframefiveOne"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_A100cornerRadius">
+        <LinearLayout android:id="@+id/linearRowframefiveOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_black_900_33_radius_20"
+                android:id="@+id/btnFrameFiveOne"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_width="@dimen/_40pxh"
+                android:paddingHorizontal="@dimen/_8pxh"
+                android:paddingVertical="@dimen/_8pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_frame5_40x40" tools:ignore="ContentDescription"/>
+            <ImageView android:id="@+id/imageVectorOne"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginStart="@dimen/_66pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_22pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_black_901"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_901"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTrainingSessio"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{screenTwoRowModel.txtTrainingSessio}"
+            style="@style/txtABeeZeeitalic16" tools:text="@string/msg_training_sessio"/>
+    </LinearLayout>
+</layout>

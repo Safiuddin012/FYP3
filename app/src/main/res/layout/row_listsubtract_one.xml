@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listsubtractOneRowModel" type="com.safiuddinsapplication.app.modules.componentone.data.model.ListsubtractOneRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/framePropertyCloc"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearRowlock"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylegray_900cornerRadius">
+            <LinearLayout android:id="@+id/linearRowsubtract"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_marginStart="@dimen/_37pxh"
+                android:layout_weight="0.91" android:layout_width="0dp" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameHome"
+                    android:layout_height="@dimen/_28pxv"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginTop="@dimen/_24pxv" android:layout_width="@dimen/_33pxh">
+                    <ImageView android:id="@+id/imagePowerButtonOneTwo"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_28pxh"
+                        android:layout_width="@dimen/_33pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_powerbutton1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_powerbutton1"/>
+                    <ImageView android:id="@+id/imagePowerButtonOneOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_28pxh"
+                        android:layout_width="@dimen/_33pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_powerbutton1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_powerbutton1"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/imageSubtractOne"
+                    android:layout_height="@dimen/_58pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_width="@dimen/_110pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_subtract"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_subtract"/>
+                <ImageView android:id="@+id/imageVectorOne"
+                    android:layout_height="@dimen/_19pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_14pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_width="@dimen/_19pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageLockOne"
+                android:layout_height="@dimen/_18pxh"
+                android:layout_marginBottom="@dimen/_28pxv"
+                android:layout_marginEnd="@dimen/_59pxh"
+                android:layout_marginStart="@dimen/_59pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="@dimen/_19pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_lock"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_lock"/>
+        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_lime_500_radius_28"
+            android:id="@+id/btnClockOne"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_120pxh"
+            android:layout_marginStart="@dimen/_120pxh"
+            android:layout_width="@dimen/_56pxh"
+            android:paddingHorizontal="@dimen/_18pxh"
+            android:paddingVertical="@dimen/_18pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_clock_gray_900" tools:ignore="ContentDescription"/>
+    </FrameLayout>
+</layout>
